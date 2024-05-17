@@ -1,0 +1,23 @@
+version: '3.4'
+
+services:
+    SqlServerDb:
+        container_name: sql-server-container
+        image: mcr.microsoft.com/mssql/server:2017-latest
+        ports:
+            - 8002:1433
+        environment:
+            - ACCEPT_EULA=Y
+            - MSSQL_SA_PASSWORD=myStong_Password123# 
+ 
+    q-wallet:
+        container_name: q-wallet-container
+        image: ${DOCKER_REGISTRY-}qwallet
+        ports:
+            - 8001:80
+        build:
+          context: .
+          dockerfile: q-wallet/Dockerfile
+        depends_on:
+            - SqlServerDb
+
