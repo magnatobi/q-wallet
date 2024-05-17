@@ -37,7 +37,7 @@ namespace q_wallet
 
 			//Add services to DI container
 			services.AddControllers();
-			services.AddApiVersioning();
+			// services.AddApiVersioning();
 			services.AddAutoMapper(typeof(Startup));
 			services.AddEndpointsApiExplorer();
 			services.AddSwaggerGen(c =>
