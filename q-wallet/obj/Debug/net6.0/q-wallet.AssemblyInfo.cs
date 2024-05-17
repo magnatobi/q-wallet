@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("q-wallet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc0b8554b2f3b8b93c55bc6e7c8236a2fc48674d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bdf7d2988c23e4b5c60b9536341730b97e5b3dcb")]
 [assembly: System.Reflection.AssemblyProductAttribute("q-wallet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("q-wallet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
