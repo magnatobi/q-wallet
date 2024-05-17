@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "q-wallet", "q-wallet\q-wallet.csproj", "{8A55C2A8-4602-4FA1-831F-EA3648984BCC}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{177B9039-0126-485F-BFAB-BE4175DD491A}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{8A55C2A8-4602-4FA1-831F-EA3648984BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A55C2A8-4602-4FA1-831F-EA3648984BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A55C2A8-4602-4FA1-831F-EA3648984BCC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{177B9039-0126-485F-BFAB-BE4175DD491A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{177B9039-0126-485F-BFAB-BE4175DD491A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{177B9039-0126-485F-BFAB-BE4175DD491A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{177B9039-0126-485F-BFAB-BE4175DD491A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

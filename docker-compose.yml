@@ -1,23 +1,46 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP .NET Core service.
 version: '3.4'
 
-services:
-    SqlServerDb:
-        container_name: sql-server-container
-        image: mcr.microsoft.com/mssql/server:2017-latest
-        ports:
-            - 8002:1433
-        environment:
-            - ACCEPT_EULA=Y
-            - MSSQL_SA_PASSWORD=myStong_Password123# 
- 
-    q-wallet:
-        container_name: q-wallet-container
-        image: ${DOCKER_REGISTRY-}qwallet
-        ports:
-            - 8001:80
-        build:
-          context: .
-          dockerfile: q-wallet/Dockerfile
-        depends_on:
-            - SqlServerDb
+#create a volume for the my sql container.To ensure Data persists after my sql container is stopped
+volumes:
+  datafiles:
 
+services:
+#Wallet Service
+  q-wallet:
+    container_name: q-wallet-api
+    build:
+      context: .
+      #Use the DockerFile in that Directory
+      dockerfile: "q-wallet/Dockerfile"
+    #This Service Depends on the database service specifed above
+    depends_on: 
+      - database
+    #Map port 8888 in the docker container to port 80 in the Api
+    ports:
+      - "5000:80"
+    restart: always
+    #Specify Environment Variables for the Api Service
+    environment: 
+      - DBHOST=database
+      #- ASPNETCORE_ENVIRONMENT=Development
+ 
+
+  #DataBase Service
+  database:
+    container_name: q-wallet-db
+    #Pull the mssql image
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    #Map port 3306 on the mysql container to port 3306 in the host
+    ports:
+      - "1433:1433"
+    #Specify where the persisted Data should be stored
+    volumes:
+      - datafiles:/var/lib/mssql
+    restart: always
+    #Specify Environment Variables for mysql
+    environment: 
+      - ACCEPT_EULA=y
+      - SA_PASSWORD=Password@1234
+
+ 

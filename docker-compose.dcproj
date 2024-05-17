@@ -3,7 +3,7 @@
   <PropertyGroup Label="Globals">
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
-    <ProjectGuid>177b9039-0126-485f-bfab-be4175dd491a</ProjectGuid>
+    <ProjectGuid>299e300c-f5f8-47bc-9e26-f0e0bb50c8b5</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>q-wallet</DockerServiceName>
