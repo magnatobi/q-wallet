@@ -2,6 +2,73 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Asp.Versioning.Abstractions/6.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Asp.Versioning.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Asp.Versioning.Abstractions.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Asp.Versioning.Http/6.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Asp.Versioning.Abstractions": "6.2.1"
+        },
+        "compile": {
+          "lib/net6.0/Asp.Versioning.Http.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Asp.Versioning.Http.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Asp.Versioning.Mvc/6.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Asp.Versioning.Http": "6.4.0"
+        },
+        "compile": {
+          "lib/net6.0/Asp.Versioning.Mvc.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Asp.Versioning.Mvc.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Asp.Versioning.Mvc.ApiExplorer/6.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Asp.Versioning.Mvc": "6.4.0"
+        },
+        "compile": {
+          "lib/net6.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "AspNetCore.HealthChecks.UI.Client/6.0.5": {
         "type": "package",
         "dependencies": {
@@ -753,6 +820,19 @@
           }
         }
       },
+      "Polly/6.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.5.0": {
         "type": "package",
         "dependencies": {
@@ -1142,6 +1222,89 @@
     }
   },
   "libraries": {
+    "Asp.Versioning.Abstractions/6.2.1": {
+      "sha512": "1j/cuxGIBJnEnPjfkIeZ4HDD8R6uuZ3WCXPEcb8zUc967JnvlqDfp82OVNUoMkzF1kpa5AVm8RA294+81xbqIQ==",
+      "type": "package",
+      "path": "asp.versioning.abstractions/6.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.abstractions.6.2.1.nupkg.sha512",
+        "asp.versioning.abstractions.nuspec",
+        "icon.png",
+        "lib/net6.0/Asp.Versioning.Abstractions.dll",
+        "lib/net6.0/Asp.Versioning.Abstractions.pdb",
+        "lib/net6.0/Asp.Versioning.Abstractions.xml",
+        "lib/netstandard1.0/Asp.Versioning.Abstractions.dll",
+        "lib/netstandard1.0/Asp.Versioning.Abstractions.pdb",
+        "lib/netstandard1.0/Asp.Versioning.Abstractions.xml",
+        "lib/netstandard2.0/Asp.Versioning.Abstractions.dll",
+        "lib/netstandard2.0/Asp.Versioning.Abstractions.pdb",
+        "lib/netstandard2.0/Asp.Versioning.Abstractions.xml"
+      ]
+    },
+    "Asp.Versioning.Http/6.4.0": {
+      "sha512": "MGuQ/5LBlXK0Zv+H50T4SNEi/NEo7SoEc0Jo+FSjYGD9es1MbU6nxcjOkfRDPMBZStsVDRnBVUVcRVJyVYyX6g==",
+      "type": "package",
+      "path": "asp.versioning.http/6.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.http.6.4.0.nupkg.sha512",
+        "asp.versioning.http.nuspec",
+        "icon.png",
+        "lib/net6.0/Asp.Versioning.Http.dll",
+        "lib/net6.0/Asp.Versioning.Http.pdb",
+        "lib/net6.0/Asp.Versioning.Http.xml",
+        "lib/netcoreapp3.1/Asp.Versioning.Http.dll",
+        "lib/netcoreapp3.1/Asp.Versioning.Http.pdb",
+        "lib/netcoreapp3.1/Asp.Versioning.Http.xml"
+      ]
+    },
+    "Asp.Versioning.Mvc/6.4.0": {
+      "sha512": "bjf/j+fdR5IF35ybrYMPKLlIOeEvaQLX3q7vVOpZwS6LXAneSYj1xIvq9xMX3sEdrlCkgPzLSH2nchx1K2ukmg==",
+      "type": "package",
+      "path": "asp.versioning.mvc/6.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.mvc.6.4.0.nupkg.sha512",
+        "asp.versioning.mvc.nuspec",
+        "icon.png",
+        "lib/net6.0/Asp.Versioning.Mvc.dll",
+        "lib/net6.0/Asp.Versioning.Mvc.pdb",
+        "lib/net6.0/Asp.Versioning.Mvc.xml",
+        "lib/netcoreapp3.1/Asp.Versioning.Mvc.dll",
+        "lib/netcoreapp3.1/Asp.Versioning.Mvc.pdb",
+        "lib/netcoreapp3.1/Asp.Versioning.Mvc.xml"
+      ]
+    },
+    "Asp.Versioning.Mvc.ApiExplorer/6.4.0": {
+      "sha512": "HFEJNtvnEsjhZ5LyLtD5jhVc7n40oHLfIJNl6L6YJgmDstTAt+2SEL17RpnzvwtR7JbS7X0D0Vds+86pt2u3SA==",
+      "type": "package",
+      "path": "asp.versioning.mvc.apiexplorer/6.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.mvc.apiexplorer.6.4.0.nupkg.sha512",
+        "asp.versioning.mvc.apiexplorer.nuspec",
+        "icon.png",
+        "lib/net6.0/Asp.Versioning.Mvc.ApiExplorer.dll",
+        "lib/net6.0/Asp.Versioning.Mvc.ApiExplorer.pdb",
+        "lib/net6.0/Asp.Versioning.Mvc.ApiExplorer.xml",
+        "lib/netcoreapp3.1/Asp.Versioning.Mvc.ApiExplorer.dll",
+        "lib/netcoreapp3.1/Asp.Versioning.Mvc.ApiExplorer.pdb",
+        "lib/netcoreapp3.1/Asp.Versioning.Mvc.ApiExplorer.xml"
+      ]
+    },
     "AspNetCore.HealthChecks.UI.Client/6.0.5": {
       "sha512": "Ko4CM9lI3ZklTDW3LRtHoiDU/Soo/r3yYRM28jbvOGaN5MjkWYGtVFwkwuNcjLFkJoFxfjqjITf+TWEqNENBzA==",
       "type": "package",
@@ -2440,6 +2603,25 @@
         "version.txt"
       ]
     },
+    "Polly/6.1.2": {
+      "sha512": "YIayKzqergfdSzWRpkhc7r5NpcYoljNarT0HNygewJdDsaCDgdAjGMsFAEsrlQf+rEQOPYrZlkfbhsB9QzdPIg==",
+      "type": "package",
+      "path": "polly/6.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/Polly.deps.json",
+        "lib/netstandard1.1/Polly.dll",
+        "lib/netstandard1.1/Polly.pdb",
+        "lib/netstandard1.1/Polly.xml",
+        "lib/netstandard2.0/Polly.deps.json",
+        "lib/netstandard2.0/Polly.dll",
+        "lib/netstandard2.0/Polly.pdb",
+        "lib/netstandard2.0/Polly.xml",
+        "polly.6.1.2.nupkg.sha512",
+        "polly.nuspec"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.5.0": {
       "sha512": "FK05XokgjgwlCI6wCT+D4/abtQkL1X1/B9Oas6uIwHFmYrIO9WUD5aLC9IzMs9GnHfUXOtXZ2S43gN1mhs5+aA==",
       "type": "package",
@@ -3098,6 +3280,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Asp.Versioning.Mvc.ApiExplorer >= 6.4.0",
       "AspNetCore.HealthChecks.UI.Client >= 6.0.5",
       "AutoMapper.Collection >= 10.0.0",
       "FluentValidation.AspNetCore >= 11.3.0",
@@ -3105,29 +3288,28 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.30",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.29",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.2",
+      "Polly >= 6.1.2",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\oluwatobi.olotu\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Oluwatobi Olotu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\oluwatobi.olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj",
+      "projectUniqueName": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj",
       "projectName": "q-wallet",
-      "projectPath": "C:\\Users\\oluwatobi.olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj",
-      "packagesPath": "C:\\Users\\oluwatobi.olotu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\oluwatobi.olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\obj\\",
+      "projectPath": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj",
+      "packagesPath": "C:\\Users\\Oluwatobi Olotu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\oluwatobi.olotu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Oluwatobi Olotu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3155,6 +3337,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Asp.Versioning.Mvc.ApiExplorer": {
+            "target": "Package",
+            "version": "[6.4.0, )"
+          },
           "AspNetCore.HealthChecks.UI.Client": {
             "target": "Package",
             "version": "[6.0.5, )"
@@ -3185,6 +3371,10 @@
             "target": "Package",
             "version": "[1.17.2, )"
           },
+          "Polly": {
+            "target": "Package",
+            "version": "[6.1.2, )"
+          },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
             "version": "[6.5.0, )"
@@ -3209,7 +3399,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+>>>>>>> 1297690598825ab21e03ca9d34379705138b3281
       }
     }
   }

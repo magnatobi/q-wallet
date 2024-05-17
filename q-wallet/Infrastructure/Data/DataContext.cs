@@ -29,12 +29,12 @@ namespace q_wallet.Infrastructure.Data
 				.Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore);
 
 			//Bank account
-			modelBuilder.Entity<BankAccount>()
-				.HasKey(e => e.UserId);
-			modelBuilder.Entity<BankAccount>()
-				.Property(f => f.Id)
-				.ValueGeneratedOnAdd()
-				.Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore);
+			//modelBuilder.Entity<BankAccount>()
+			//	.HasKey(e => e.UserId);
+			//modelBuilder.Entity<BankAccount>()
+			//	.Property(f => f.Id)
+			//	.ValueGeneratedOnAdd()
+			//	.Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore);
 
 
 		}

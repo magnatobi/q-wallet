@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\oluwatobi.olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj": {}
+    "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\oluwatobi.olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj": {
+    "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\oluwatobi.olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj",
+        "projectUniqueName": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj",
         "projectName": "q-wallet",
-        "projectPath": "C:\\Users\\oluwatobi.olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj",
-        "packagesPath": "C:\\Users\\oluwatobi.olotu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\oluwatobi.olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\obj\\",
+        "projectPath": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\q-wallet.csproj",
+        "packagesPath": "C:\\Users\\Oluwatobi Olotu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\oluwatobi.olotu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Oluwatobi Olotu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -46,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
             "AspNetCore.HealthChecks.UI.Client": {
               "target": "Package",
               "version": "[6.0.5, )"
@@ -76,6 +79,10 @@
               "target": "Package",
               "version": "[1.17.2, )"
             },
+            "Polly": {
+              "target": "Package",
+              "version": "[6.1.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -100,7 +107,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+>>>>>>> 1297690598825ab21e03ca9d34379705138b3281
         }
       }
     }
