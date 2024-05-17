@@ -80,7 +80,7 @@ namespace q_wallet.Infrastructure.Data
 					FirstName = "John",
 					LastName = "Doe",
 					PlaceOfBirth = "Magodo",
-					DateOfBirth = new DateOnly(),
+					DateOfBirth = new DateTime(1990,05,11),
 					Nationality = "Nigerian",
 					Sex = "Male",
 				},
@@ -89,7 +89,7 @@ namespace q_wallet.Infrastructure.Data
 					FirstName = "Mary",
 					LastName = "Alex",
 					PlaceOfBirth = "Ikeja",
-					DateOfBirth = new DateOnly(),
+					DateOfBirth = new DateTime(1990,05,11),
 					Nationality = "Nigerian",
 					Sex = "Female",
 				}
