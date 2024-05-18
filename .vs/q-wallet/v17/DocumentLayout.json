@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8A55C2A8-4602-4FA1-831F-EA3648984BCC}|q-wallet\\q-wallet.csproj|c:\\users\\oluwatobi olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A55C2A8-4602-4FA1-831F-EA3648984BCC}|q-wallet\\q-wallet.csproj|solutionrelative:q-wallet\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}|docker-compose.dcproj|c:\\users\\oluwatobi olotu\\source\\repos\\dotnet\\q-wallet\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8A55C2A8-4602-4FA1-831F-EA3648984BCC}|q-wallet\\q-wallet.csproj|c:\\users\\oluwatobi olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\applications\\entities\\useraccounts\\handlers\\updateuseraccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A55C2A8-4602-4FA1-831F-EA3648984BCC}|q-wallet\\q-wallet.csproj|solutionrelative:q-wallet\\applications\\entities\\useraccounts\\handlers\\updateuseraccountcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -75,16 +83,8 @@
       "RelativeMoniker": "D:0:0:{8A55C2A8-4602-4FA1-831F-EA3648984BCC}|q-wallet\\q-wallet.csproj|solutionrelative:q-wallet\\applications\\entities\\bankaccounts\\commands\\deletebankaccountcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A55C2A8-4602-4FA1-831F-EA3648984BCC}|q-wallet\\q-wallet.csproj|c:\\users\\oluwatobi olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8A55C2A8-4602-4FA1-831F-EA3648984BCC}|q-wallet\\q-wallet.csproj|solutionrelative:q-wallet\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}|docker-compose.dcproj|c:\\users\\oluwatobi olotu\\source\\repos\\dotnet\\q-wallet\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}|docker-compose.dcproj|solutionrelative:launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}|docker-compose.dcproj|c:\\users\\oluwatobi olotu\\source\\repos\\dotnet\\q-wallet\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{299E300C-F5F8-47BC-9E26-F0E0BB50C8B5}|docker-compose.dcproj|c:\\users\\oluwatobi olotu\\source\\repos\\dotnet\\q-wallet\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -142,11 +142,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "DebitBankAccountCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\DebitBankAccountCommandHandler.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\DebitBankAccountCommandHandler.cs",
@@ -159,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "BankAccountController.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Controllers\\BankAccountController.cs",
               "RelativeDocumentMoniker": "q-wallet\\Controllers\\BankAccountController.cs",
@@ -172,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "BankAccountRepository.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Infrastructure\\Implementations\\Repositories\\BankAccountRepository.cs",
               "RelativeDocumentMoniker": "q-wallet\\Infrastructure\\Implementations\\Repositories\\BankAccountRepository.cs",
@@ -181,21 +181,7 @@
               "ViewState": "AQIAAFcAAAAAAAAAAAAYwFoAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T10:08:24.568Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreditBankAccountCommandHandler.cs",
-              "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreditBankAccountCommandHandler.cs",
-              "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreditBankAccountCommandHandler.cs",
-              "ToolTip": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreditBankAccountCommandHandler.cs",
-              "RelativeToolTip": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreditBankAccountCommandHandler.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T11:22:53.268Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -207,20 +193,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UpdateUserAccountCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\UserAccounts\\Handlers\\UpdateUserAccountCommandHandler.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\UserAccounts\\Handlers\\UpdateUserAccountCommandHandler.cs",
               "ToolTip": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\UserAccounts\\Handlers\\UpdateUserAccountCommandHandler.cs",
               "RelativeToolTip": "q-wallet\\Applications\\Entities\\UserAccounts\\Handlers\\UpdateUserAccountCommandHandler.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAYwEIAAAA6AAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwDkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T20:07:55.899Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwBQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-05-17T19:39:33.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Startup.cs",
+              "RelativeDocumentMoniker": "q-wallet\\Startup.cs",
+              "ToolTip": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Startup.cs",
+              "RelativeToolTip": "q-wallet\\Startup.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwCIAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T19:48:10.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "CreditBankAccountCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreditBankAccountCommandHandler.cs",
+              "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreditBankAccountCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreditBankAccountCommandHandler.cs",
+              "RelativeToolTip": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreditBankAccountCommandHandler.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T11:22:53.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CreateUserAccountCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\UserAccounts\\Handlers\\CreateUserAccountCommandHandler.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\UserAccounts\\Handlers\\CreateUserAccountCommandHandler.cs",
@@ -228,12 +252,11 @@
               "RelativeToolTip": "q-wallet\\Applications\\Entities\\UserAccounts\\Handlers\\CreateUserAccountCommandHandler.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAQwD8AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T20:07:44.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T20:07:44.005Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "UpdateBankAccountCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\UpdateBankAccountCommandHandler.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\UpdateBankAccountCommandHandler.cs",
@@ -241,12 +264,11 @@
               "RelativeToolTip": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\UpdateBankAccountCommandHandler.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAcwEEAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T20:56:17.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T20:56:17.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CreateBankAccountCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreateBankAccountCommandHandler.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreateBankAccountCommandHandler.cs",
@@ -254,12 +276,11 @@
               "RelativeToolTip": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\CreateBankAccountCommandHandler.cs",
               "ViewState": "AQIAACUAAAAAAAAAAAAuwDwAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T08:18:25.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T08:18:25.071Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "CreateUserAccountCommand.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\UserAccounts\\Commands\\CreateUserAccountCommand.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\UserAccounts\\Commands\\CreateUserAccountCommand.cs",
@@ -267,12 +288,11 @@
               "RelativeToolTip": "q-wallet\\Applications\\Entities\\UserAccounts\\Commands\\CreateUserAccountCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T20:07:01.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T20:07:01.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "UpdateUserAccountCommand.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\UserAccounts\\Commands\\UpdateUserAccountCommand.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\UserAccounts\\Commands\\UpdateUserAccountCommand.cs",
@@ -280,12 +300,11 @@
               "RelativeToolTip": "q-wallet\\Applications\\Entities\\UserAccounts\\Commands\\UpdateUserAccountCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T11:21:21.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-18T11:21:21.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Extensions\\MappingProfile.cs",
               "RelativeDocumentMoniker": "q-wallet\\Extensions\\MappingProfile.cs",
@@ -297,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "UserAccount.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Domain\\Entities\\UserAccount.cs",
               "RelativeDocumentMoniker": "q-wallet\\Domain\\Entities\\UserAccount.cs",
@@ -309,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "DebitBankAccountCommand.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\DebitBankAccountCommand.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\DebitBankAccountCommand.cs",
@@ -321,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "CreditBankAccountCommand.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\CreditBankAccountCommand.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\CreditBankAccountCommand.cs",
@@ -333,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "CreateBankAccountCommand.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\CreateBankAccountCommand.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\CreateBankAccountCommand.cs",
@@ -345,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "UpdateBankAccountCommand.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\UpdateBankAccountCommand.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\UpdateBankAccountCommand.cs",
@@ -357,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "DeleteBankAccountCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\DeleteBankAccountCommandHandler.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Handlers\\DeleteBankAccountCommandHandler.cs",
@@ -369,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "DeleteBankAccountCommand.cs",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\DeleteBankAccountCommand.cs",
               "RelativeDocumentMoniker": "q-wallet\\Applications\\Entities\\BankAccounts\\Commands\\DeleteBankAccountCommand.cs",
@@ -382,18 +401,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-05-17T19:39:33.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\launchSettings.json",
               "RelativeDocumentMoniker": "launchSettings.json",
@@ -402,18 +409,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-05-17T19:39:35.09Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Startup.cs",
-              "RelativeDocumentMoniker": "q-wallet\\Startup.cs",
-              "ToolTip": "C:\\Users\\Oluwatobi Olotu\\source\\repos\\dotnet\\q-wallet\\q-wallet\\Startup.cs",
-              "RelativeToolTip": "q-wallet\\Startup.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAiwCUAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T19:48:10.612Z"
             },
             {
               "$type": "Document",

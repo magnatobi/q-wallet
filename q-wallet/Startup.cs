@@ -31,8 +31,8 @@ namespace q_wallet
 			//});
 
 			// Register AppDbContext
-			//var connectionString = Configuration.GetConnectionString("WalletConnection");
-			var connectionString = Configuration.GetConnectionString("DefaultConnection");
+			var connectionString = Configuration.GetConnectionString("WalletConnection");
+			//var connectionString = Configuration.GetConnectionString("DefaultConnection");
 			services.AddDbContextPool<DataContext>(db => db.UseSqlServer(connectionString));
 
 			//Add services to DI container

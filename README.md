@@ -41,7 +41,7 @@ Once the Docker containers are up and running, you can navigate to the Swagger e
 1. **Navigate to Swagger:**
    Open your web browser and go to:
    ```
-   http://localhost:8080/swagger/index.html
+   http://localhost:5000/swagger/index.html
    ```
 
 This will bring up the Swagger UI where you can interact with the Q Wallet API endpoints.
