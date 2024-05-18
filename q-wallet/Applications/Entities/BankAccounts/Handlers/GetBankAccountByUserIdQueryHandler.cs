@@ -58,7 +58,7 @@ namespace q_wallet.Applications.Entities.BankAccounts.Handlers
 				response = await repository.GetByExpression(x => x.UserId == request.UserId && !x.IsDeleted).FirstOrDefaultAsync();
 
 				//Update account balance
-				response.AccountBalance = await repository.GetUserBalanceAsync(response.UserId);
+				response.AccountBalance = await repository.GetBankAccountBalanceByUserIdAsync(response.UserId);
 
 				//Log information
 				logger.LogInformation($"{nameof(BankAccount)} data containing {response}, was fetched successfully by handler: {typeof(GetBankAccountByUserIdQueryHandler).Name}");

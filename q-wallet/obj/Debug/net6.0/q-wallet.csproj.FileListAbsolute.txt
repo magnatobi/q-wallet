@@ -87,6 +87,10 @@ C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\q-wallet.runtimeconfig.json
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\q-wallet.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\q-wallet.pdb
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Asp.Versioning.Abstractions.dll
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Asp.Versioning.Http.dll
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Asp.Versioning.Mvc.dll
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Asp.Versioning.Mvc.ApiExplorer.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\HealthChecks.UI.Client.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\HealthChecks.UI.Core.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\AutoMapper.dll
@@ -117,6 +121,7 @@ C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Polly.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -163,8 +168,3 @@ C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\obj\Debug\net6.0\
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\obj\Debug\net6.0\q-wallet.pdb
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\obj\Debug\net6.0\q-wallet.genruntimeconfig.cache
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\obj\Debug\net6.0\ref\q-wallet.dll
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Asp.Versioning.Abstractions.dll
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Asp.Versioning.Http.dll
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Asp.Versioning.Mvc.dll
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Asp.Versioning.Mvc.ApiExplorer.dll
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\q-wallet\bin\Debug\net6.0\Polly.dll

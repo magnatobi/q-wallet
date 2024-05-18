@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Polly;
 
-namespace Access.API.Extensions
+namespace q_wallet.Extensions
 {
     public static class DbExtension
     {
@@ -18,6 +18,7 @@ namespace Access.API.Extensions
                 try
                 {
                     logger.LogInformation($"Started Db Migration: {typeof(TContext).Name}");
+
                     //retry strategy
                     var retry = Policy.Handle<SqlException>()
                         .WaitAndRetry(
@@ -42,8 +43,8 @@ namespace Access.API.Extensions
         private static void CallSeeder<TContext>(Action<TContext, IServiceProvider> seeder, TContext context,
             IServiceProvider services) where TContext : DbContext
         {
-            //context.Database.Migrate();
-            //seeder(context, services);
+            context.Database.Migrate();
+            seeder(context, services);
         }
     }
 }

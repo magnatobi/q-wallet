@@ -14,9 +14,9 @@ namespace q_wallet.Applications.Entities.BankAccounts.Commands
 		public Guid UserId { get; set; }
 
 		//Below Properties are Audit properties
-		public Guid CreatedBy { get; set; } = Guid.Empty;
-		public DateTime CreatedOn { get; set; }
-		public Guid LastModifiedBy { get; set; } = Guid.Empty;
-		public DateTime LastModifiedOn { get; set; }
+		//public Guid CreatedBy { get; set; } = Guid.Empty;
+		//public DateTime CreatedOn { get; set; }
+		//public Guid LastModifiedBy { get; set; } = Guid.Empty;
+		//public DateTime LastModifiedOn { get; set; }
 	}
 }

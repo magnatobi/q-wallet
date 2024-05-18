@@ -1,19 +1,18 @@
-<<<<<<< HEAD
-C:\Users\oluwatobi.olotu\source\repos\dotnet\q-wallet\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
-=======
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\q-wallet.deps.json
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\q-wallet.runtimeconfig.json
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\appsettings.Development.json
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\appsettings.json
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\q-wallet.deps.json
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\q-wallet.runtimeconfig.json
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\q-wallet.exe
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\q-wallet.dll
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\MediatR.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.EntityFrameworkCore.dll
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Polly.dll
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Data.SqlClient.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\AutoMapper.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\FluentValidation.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\MediatR.Contracts.dll
@@ -21,6 +20,7 @@ C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Asp.Versioning.H
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.OpenApi.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\HealthChecks.UI.Client.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.EntityFrameworkCore.SqlServer.dll
@@ -29,13 +29,10 @@ C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Entity
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\System.Diagnostics.DiagnosticSource.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Identity.Client.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Asp.Versioning.Abstractions.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\HealthChecks.UI.Core.dll
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Data.SqlClient.dll
-C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\Microsoft.Identity.Client.dll
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\bin\Debug\q-wallet.pdb
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
 C:\Users\Oluwatobi Olotu\source\repos\dotnet\q-wallet\obj\Debug\docker-c.35A3FFBA.Up2Date
->>>>>>> 1297690598825ab21e03ca9d34379705138b3281

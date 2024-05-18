@@ -19,29 +19,33 @@ namespace q_wallet.Infrastructure.Implementations.Repositories
 		/// Generate account number
 		/// </summary>
 		/// <returns></returns>
-		public long GetAccountNumber()
+		public long GenerateAccountNumber()
 		{
-			String r = new Random().Next(0, 99999999).ToString("D6");
-			string formatedNumber = String.Format("00{0}", r);
-			long accountNumber = Convert.ToInt64(formatedNumber);			
-			return accountNumber;
+			String r = new Random().Next(0, 99999).ToString("D6");
+			string formatedNumber = String.Format("10000{0}", r);
+            return Convert.ToInt64(formatedNumber);
 		}
 
 		/// <summary>
-		/// Override the existing add bank account	
+		/// Create a new bank account	
 		/// </summary>
 		/// <param name="account"></param>
 		/// <returns></returns>
 		public async Task<BankAccount> CreateBankAccountAsync(BankAccount account)
 		{
-			//Add bank account
-			await AddAsync(account);
+            //Generate account number
+            account.AccountNumber = GenerateAccountNumber();
+
+            //Add bank account
+            await AddAsync(account);
 
 			//Add account created event
 			var @event = new BankAccountEvent()
 			{
 				EventType = EventType.BankAccountCreatedEvent,
 				EventName = "Bank Account Created Successfully",
+				AccountNumber = account.AccountNumber,
+				AccountTypeId = account.AccountTypeId,
 				Amount = account.AccountBalance,
 				Balance = account.AccountBalance,
 				UserId = account.UserId,
@@ -60,7 +64,7 @@ namespace q_wallet.Infrastructure.Implementations.Repositories
 		/// <param name="amount"></param>
 		/// <param name="account"></param>
 		/// <returns></returns>
-		public async Task<BankAccount> Deposit(double amount, BankAccount account)
+		public async Task<BankAccount> CreditBankAccountAsync(double amount, BankAccount account)
 		{
 			if (amount > 0)
 			{
@@ -75,7 +79,9 @@ namespace q_wallet.Infrastructure.Implementations.Repositories
 				{
 					EventType = EventType.BankAccountCreditedEvent,
 					EventName = "Bank Account Credited Successfully",
-					Amount = -amount,
+                    AccountNumber = account.AccountNumber,
+					AccountTypeId = account.AccountTypeId,
+                    Amount = amount,
 					Balance = account.AccountBalance,
 					UserId = account.UserId,
 					CreatedOn = DateTime.Now
@@ -95,12 +101,12 @@ namespace q_wallet.Infrastructure.Implementations.Repositories
 		/// <param name="amount"></param>
 		/// <param name="account"></param>
 		/// <returns></returns>
-		public async Task<BankAccount> Withdraw(double amount, BankAccount account)
+		public async Task<BankAccount> DebitBankAccountAsync(double amount, BankAccount account)
 		{
-			if (amount > 0 && amount > account.AccountBalance)
+			if (amount > 0 && amount < account.AccountBalance)
 			{
 				//Get user balance
-				var balance = await GetUserBalanceAsync(account.UserId);
+				var balance = await GetBankAccountBalanceByUserIdAsync(account.UserId);
 
 				//Process transaction if the amount is less
 				//than what is in the account transaction
@@ -117,7 +123,9 @@ namespace q_wallet.Infrastructure.Implementations.Repositories
 					{
 						EventType = EventType.BankAccountDebitedEvent,
 						EventName = "Bank Account Debited Successfully",
-						Amount = -amount,
+                        AccountNumber = account.AccountNumber,
+						AccountTypeId = account.AccountTypeId,
+                        Amount = -amount,
 						Balance = account.AccountBalance,
 						UserId = account.UserId,
 						CreatedOn = DateTime.Now
@@ -135,7 +143,7 @@ namespace q_wallet.Infrastructure.Implementations.Repositories
 		/// Get user account balance
 		/// </summary>
 		/// <returns></returns>
-		public async Task<double> GetUserBalanceAsync(Guid userId)
+		public async Task<double> GetBankAccountBalanceByUserIdAsync(Guid userId)
 		{
 			//Initialise
 			double balance = 0;

@@ -57,12 +57,14 @@ namespace q_wallet.Infrastructure.Data
 				new BankAccountType()
 				{
 					Name = "SAVINGS",
-					Description = "Savings account"
+					Description = "Savings account",
+					CreatedOn = DateTime.Now,
 				},
 				new BankAccountType()
 				{
 					Name = "CURRENT",
-					Description = "Current account"
+					Description = "Current account",
+					CreatedOn = DateTime.Now,
 				}
 			};
 		}
@@ -83,6 +85,8 @@ namespace q_wallet.Infrastructure.Data
 					DateOfBirth = new DateTime(1990,05,11),
 					Nationality = "Nigerian",
 					Sex = "Male",
+					CreatedOn= DateTime.Now,
+					LastModifiedOn = DateTime.Now,
 				},
 				new UserAccount()
 				{
@@ -92,7 +96,9 @@ namespace q_wallet.Infrastructure.Data
 					DateOfBirth = new DateTime(1990,05,11),
 					Nationality = "Nigerian",
 					Sex = "Female",
-				}
+                    CreatedOn= DateTime.Now,
+                    LastModifiedOn = DateTime.Now,
+                }
 			};
 		}
 		

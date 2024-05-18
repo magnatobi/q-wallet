@@ -1,3 +1,4 @@
+using q_wallet.Extensions;
 using q_wallet.Infrastructure.Data;
 
 namespace q_wallet
@@ -8,11 +9,11 @@ namespace q_wallet
 		{
 			CreateHostBuilder(args)
 				.Build()
-				//.MigrateDatabase<DataContext>((context, services) =>
-				//{
-				//	var logger = services.GetService<ILogger<DataContextSeed>>();
-				//	DataContextSeed.SeedAsync(context, logger).Wait();
-				//})
+				.MigrateDatabase<DataContext>((context, services) =>
+				{
+					var logger = services.GetService<ILogger<DataContextSeed>>();
+					DataContextSeed.SeedAsync(context, logger).Wait();
+				})
 				.Run();
 		}
 

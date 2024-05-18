@@ -53,12 +53,15 @@ namespace q_wallet.Applications.Entities.BankAccounts.Handlers
 			logger.LogInformation($"Data request containing {request}, is trying to create {nameof(BankAccount)} through {typeof(CreateBankAccountCommandHandler).Name}");
 
 			try
-			{
-				//Generate account number
-				entity.AccountNumber = this.repository.GetAccountNumber();
-				
+			{	
+				//Update entity
+				entity.CreatedOn = DateTime.Now;
+				entity.LastModifiedOn = DateTime.Now;
+				entity.CreatedBy = entity.UserId;
+				entity.LastModifiedBy = entity.UserId;
+
 				//process the request using the entity
-				response = await this.repository.AddAsync(entity);
+				response = await this.repository.CreateBankAccountAsync(entity);
 
 				//Log information
 				logger.LogInformation($"{nameof(BankAccount)} data containing {entity}, was saved successfully by handler: {typeof(CreateBankAccountCommandHandler).Name}");

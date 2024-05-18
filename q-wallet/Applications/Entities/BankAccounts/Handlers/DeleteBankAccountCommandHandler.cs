@@ -60,8 +60,12 @@ namespace q_wallet.Applications.Entities.BankAccounts.Handlers
 					//change the status to true
 					record.IsDeleted = true;
 
-					//process the request using the entity
-					await repository.UpdateAsync(record);
+                    //Update record
+                    record.LastModifiedOn = DateTime.Now;
+                    record.LastModifiedBy = record.UserId;
+
+                    //process the request using the entity
+                    await repository.UpdateAsync(record);
 
 					//set as true if the deletion was successful
 					isDeleted = true;

@@ -10,8 +10,8 @@ namespace q_wallet.Domain.Entities
 			//Set default account balance 
 			AccountBalance = 0.00D;
 			
-            User = new UserAccount();
-            AccountType = new BankAccountType();
+            //User = new UserAccount();
+            //AccountType = new BankAccountType();
         }
 
         [MaxLength(10)]
@@ -20,8 +20,8 @@ namespace q_wallet.Domain.Entities
 
         //Navigation Properties
         public int AccountTypeId { get; set; }
-        public virtual BankAccountType AccountType { get; set; }
+        public virtual BankAccountType? AccountType { get; set; }
         public Guid UserId { get; set; }
-        public virtual UserAccount User { get; set;}
+        public virtual UserAccount? User { get; set;}
     }
 }

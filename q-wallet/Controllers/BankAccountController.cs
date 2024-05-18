@@ -147,7 +147,7 @@ namespace q_wallet.Controllers
 		[HttpPost("bank-accounts/deposit")]
 		[ProducesResponseType(typeof(IApiResponse<BankAccountResponse>), StatusCodes.Status200OK)]
 		[ProducesResponseType(typeof(IApiResponse<BankAccountResponse>), StatusCodes.Status400BadRequest)]
-		public async Task<ActionResult<IApiResponse<BankAccountResponse>>> Deposit([FromBody] CreateBankAccountCommand request)
+		public async Task<ActionResult<IApiResponse<BankAccountResponse>>> Deposit([FromBody] CreditBankAccountCommand request)
 		{
 			//Send query to handler for processing
 			var record = await this._mediator.Send(request);
@@ -155,10 +155,10 @@ namespace q_wallet.Controllers
 			// Check for null
 			if (record == null || record.Id == 0)
 			{
-				//Set response if not record found
+				//Set response if no record found
 				this._response.Success = false;
 				this._response.Code = StatusCodes.Status400BadRequest;
-				this._response.Message = "Error creating record!";
+				this._response.Message = "Error updating record!";
 				this._response.Data = null;
 			}
 			else
@@ -166,7 +166,7 @@ namespace q_wallet.Controllers
 				//Set user response if found
 				this._response.Success = true;
 				this._response.Code = StatusCodes.Status200OK;
-				this._response.Message = "Record created!";
+				this._response.Message = "Record updated!";
 				this._response.Data?.Add(record);
 			}
 
@@ -181,7 +181,7 @@ namespace q_wallet.Controllers
 		[HttpPost("bank-accounts/withdraw")]
 		[ProducesResponseType(typeof(IApiResponse<BankAccountResponse>), StatusCodes.Status200OK)]
 		[ProducesResponseType(typeof(IApiResponse<BankAccountResponse>), StatusCodes.Status400BadRequest)]
-		public async Task<ActionResult<IApiResponse<BankAccountResponse>>> Withdraw([FromBody] CreateBankAccountCommand request)
+		public async Task<ActionResult<IApiResponse<BankAccountResponse>>> Withdraw([FromBody] DebitBankAccountCommand request)
 		{
 			//Send query to handler for processing
 			var record = await this._mediator.Send(request);
@@ -192,7 +192,7 @@ namespace q_wallet.Controllers
 				//Set response if not record found
 				this._response.Success = false;
 				this._response.Code = StatusCodes.Status400BadRequest;
-				this._response.Message = "Error creating record!";
+				this._response.Message = "Error updating record!";
 				this._response.Data = null;
 			}
 			else
@@ -200,7 +200,7 @@ namespace q_wallet.Controllers
 				//Set user response if found
 				this._response.Success = true;
 				this._response.Code = StatusCodes.Status200OK;
-				this._response.Message = "Record created!";
+				this._response.Message = "Record updated!";
 				this._response.Data?.Add(record);
 			}
 

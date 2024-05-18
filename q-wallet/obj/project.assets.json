@@ -342,11 +342,11 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Design/6.0.29": {
+      "Microsoft.EntityFrameworkCore.Design/6.0.30": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.8.26",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.29"
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.30"
         },
         "compile": {
           "lib/net6.0/_._": {
@@ -396,10 +396,10 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.29": {
+      "Microsoft.EntityFrameworkCore.Tools/6.0.30": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.29"
+          "Microsoft.EntityFrameworkCore.Design": "6.0.30"
         },
         "compile": {
           "lib/net6.0/_._": {}
@@ -1665,10 +1665,10 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Design/6.0.29": {
-      "sha512": "1fLtZkfZPkjCKEMMgk4aDZpnP34nTjBxYKLRTB0Ji7pdbT3cOuA+tQKwN25yroQ7NTq1WOx1hZzqZ7weHIRNpg==",
+    "Microsoft.EntityFrameworkCore.Design/6.0.30": {
+      "sha512": "TGHrrbO093jP+0QVNZoYLEnV5aZPiXZhma+83iFf6HmnRrMZGq7CgzcUsbmMzoUUcLxCDYNGEWLkkrxcacXMDg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.design/6.0.29",
+      "path": "microsoft.entityframeworkcore.design/6.0.30",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1676,7 +1676,7 @@
         "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
-        "microsoft.entityframeworkcore.design.6.0.29.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.6.0.30.nupkg.sha512",
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
@@ -1708,17 +1708,17 @@
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.29": {
-      "sha512": "WMAZJD60L0frZD74ghSqF7eORvlJsHGT/FR5w+MTHZPStDeYjEThbLkdaLyNdz9+Pipk/JZS4DYNkZq9+c4wRQ==",
+    "Microsoft.EntityFrameworkCore.Tools/6.0.30": {
+      "sha512": "qlDI45bZe7BO50hdbbBLLrbXDDkZDLN0mqLtKeYOqP+eUvvEJc/GcPg+PjgXDI64jwlsYUChKnt1W1DgUtjcIQ==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.tools/6.0.29",
+      "path": "microsoft.entityframeworkcore.tools/6.0.30",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/_._",
-        "microsoft.entityframeworkcore.tools.6.0.29.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.6.0.30.nupkg.sha512",
         "microsoft.entityframeworkcore.tools.nuspec",
         "tools/EntityFrameworkCore.PS2.psd1",
         "tools/EntityFrameworkCore.PS2.psm1",
@@ -3286,7 +3286,7 @@
       "FluentValidation.AspNetCore >= 11.3.0",
       "MediatR >= 12.2.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.30",
-      "Microsoft.EntityFrameworkCore.Tools >= 6.0.29",
+      "Microsoft.EntityFrameworkCore.Tools >= 6.0.30",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.17.2",
       "Polly >= 6.1.2",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -3331,6 +3331,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3365,7 +3370,7 @@
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[6.0.29, )"
+            "version": "[6.0.30, )"
           },
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
@@ -3399,11 +3404,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
->>>>>>> 1297690598825ab21e03ca9d34379705138b3281
       }
     }
   }

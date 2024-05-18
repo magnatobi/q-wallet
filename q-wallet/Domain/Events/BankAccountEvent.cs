@@ -7,9 +7,11 @@ namespace q_wallet.Domain.Events
 	{
         public BankAccountEvent()
         {
-            User = new UserAccount();
+            //User = new UserAccount();
         }
 
+        public long AccountNumber { get; internal set; }
+        public int AccountTypeId { get; set; }
         public double Amount { get; set; }
         public double Balance { get; set; }
 
