@@ -62,8 +62,12 @@ namespace q_wallet.Applications.Entities.UserAccounts.Handlers
 					//map the request to the entity
 					var entity = mapper.Map(request, record);
 
-					//process the request using the entity
-					response = await repository.UpdateAsync(entity);
+                    //Update entity
+                    entity.LastModifiedOn = DateTime.Now;
+                    entity.LastModifiedBy = entity.UserId;
+
+                    //process the request using the entity
+                    response = await repository.UpdateAsync(entity);
 
 					//Log information
 					logger.LogInformation($"{nameof(UserAccount)} data containing {response}, was updated successfully by handler: {typeof(UpdateUserAccountCommandHandler).Name}");

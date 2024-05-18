@@ -55,8 +55,14 @@ namespace q_wallet.Applications.Entities.UserAccounts.Handlers
 
 			try
 			{
-				//process the request using the entity
-				response = await this.repository.AddAsync(entity);
+                //Update entity
+                entity.CreatedOn = DateTime.Now;
+                entity.LastModifiedOn = DateTime.Now;
+                //entity.CreatedBy = entity.UserId;
+                //entity.LastModifiedBy = entity.UserId;
+
+                //process the request using the entity
+                response = await this.repository.AddAsync(entity);
 
 				//Log information
 				logger.LogInformation($"{nameof(UserAccount)} data containing {entity}, was saved successfully by handler: {typeof(CreateUserAccountCommandhandler).Name}");
