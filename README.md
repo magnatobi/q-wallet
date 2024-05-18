@@ -169,6 +169,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Inspired by modern software architecture principles.
-```
-
-This README now includes detailed explanations for creating user accounts, bank accounts, depositing, and withdrawing money, along with example payloads for each action.
