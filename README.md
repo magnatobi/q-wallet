@@ -1,4 +1,3 @@
-```markdown
 # Q Wallet
 
 A simple wallet application implementing CQRS pattern and Event Sourcing.
