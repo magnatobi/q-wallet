@@ -102,39 +102,28 @@ namespace q_wallet.Infrastructure.Implementations.Repositories
 		/// <param name="account"></param>
 		/// <returns></returns>
 		public async Task<BankAccount> DebitBankAccountAsync(double amount, BankAccount account)
-		{
-			if (amount > 0 && amount < account.AccountBalance)
+		{			
+			//Update account balance
+			account.AccountBalance -= amount;
+
+			//Update account balance
+			await UpdateAsync(account);
+
+			//Add account created event
+			var @event = new BankAccountEvent()
 			{
-				//Get user balance
-				var balance = await GetBankAccountBalanceByUserIdAsync(account.UserId);
+				EventType = EventType.BankAccountDebitedEvent,
+				EventName = "Bank Account Debited Successfully",
+                AccountNumber = account.AccountNumber,
+				AccountTypeId = account.AccountTypeId,
+                Amount = -amount,
+				Balance = account.AccountBalance,
+				UserId = account.UserId,
+				CreatedOn = DateTime.Now
+			};
 
-				//Process transaction if the amount is less
-				//than what is in the account transaction
-				if (balance >= amount)
-				{
-					//Update account balance
-					account.AccountBalance -= amount;
-
-					//Update account balance
-					await UpdateAsync(account);
-
-					//Add account created event
-					var @event = new BankAccountEvent()
-					{
-						EventType = EventType.BankAccountDebitedEvent,
-						EventName = "Bank Account Debited Successfully",
-                        AccountNumber = account.AccountNumber,
-						AccountTypeId = account.AccountTypeId,
-                        Amount = -amount,
-						Balance = account.AccountBalance,
-						UserId = account.UserId,
-						CreatedOn = DateTime.Now
-					};
-
-					//Apply event
-					await this.ApplyEvent(@event);
-				}                
-			}
+			//Apply event
+			await this.ApplyEvent(@event);
 
 			return account;
 		}

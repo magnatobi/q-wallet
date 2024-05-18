@@ -17,6 +17,8 @@ namespace q_wallet.Extensions
 			//BankAccounts
 			CreateMap<BankAccount, BankAccountResponse>().ReverseMap();
 			CreateMap<BankAccount, CreateBankAccountCommand>().ReverseMap();
+			CreateMap<BankAccount, CreditBankAccountCommand>().ReverseMap();
+			CreateMap<BankAccount, DebitBankAccountCommand>().ReverseMap();
 			CreateMap<BankAccountResponse, CreateBankAccountCommand>().ReverseMap();
 			CreateMap<BankAccount, UpdateBankAccountCommand>().ReverseMap();
 			CreateMap<BankAccount, DeleteBankAccountCommand>().ReverseMap();

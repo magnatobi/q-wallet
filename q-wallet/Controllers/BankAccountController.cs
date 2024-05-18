@@ -184,27 +184,8 @@ namespace q_wallet.Controllers
 		public async Task<ActionResult<IApiResponse<BankAccountResponse>>> Withdraw([FromBody] DebitBankAccountCommand request)
 		{
 			//Send query to handler for processing
-			var record = await this._mediator.Send(request);
-
-			// Check for null
-			if (record == null || record.Id == 0)
-			{
-				//Set response if not record found
-				this._response.Success = false;
-				this._response.Code = StatusCodes.Status400BadRequest;
-				this._response.Message = "Error updating record!";
-				this._response.Data = null;
-			}
-			else
-			{
-				//Set user response if found
-				this._response.Success = true;
-				this._response.Code = StatusCodes.Status200OK;
-				this._response.Message = "Record updated!";
-				this._response.Data?.Add(record);
-			}
-
-			return Ok(this._response);
+			var result = await this._mediator.Send(request);
+			return Ok(result);
 		}
 
 		/// <summary>
